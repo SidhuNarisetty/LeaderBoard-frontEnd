@@ -8,7 +8,7 @@ function AddNewUser() {
   const handleSubmit = async (eve) => {
     eve.preventDefault();
     try{
-      const response = await axios.post('https://leader-board-back-end.vercel.app/api/v1/users',
+      const response = await axios.post('https://leader-board-back-nl3x5pmu6-sidhu-narisettys-projects.vercel.app/api/v1/users',
         {name}
       );
       navigate('/');

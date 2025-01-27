@@ -10,7 +10,7 @@ function User() {
   useEffect(()=>{
     const fetchUser = async() =>{
       try{
-        const response = await axios.get(`https://leader-board-back-end.vercel.app/api/v1/users/${id}`);
+        const response = await axios.get(`https://leader-board-back-nl3x5pmu6-sidhu-narisettys-projects.vercel.app/api/v1/users/${id}`);
         setUser(response.data.user);
       }catch(error){
         console.log(error);
