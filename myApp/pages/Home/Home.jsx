@@ -10,7 +10,7 @@ function Home() {
   useEffect(()=>{
     const fetchUsers = async ()=>{
       try{
-        const response = await axios.get('https://leader-board-back-j11gfrkfa-sidhu-narisettys-projects.vercel.app/api/v1/users');
+        const response = await axios.get('https://leader-board-back-end.vercel.app/api/v1/users');
         setUsers(response.data.user);
       }catch(error){
         console.log(error);

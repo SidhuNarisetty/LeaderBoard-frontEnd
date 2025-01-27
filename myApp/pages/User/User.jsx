@@ -10,7 +10,7 @@ function User() {
   useEffect(()=>{
     const fetchUser = async() =>{
       try{
-        const response = await axios.get(`https://leader-board-back-j11gfrkfa-sidhu-narisettys-projects.vercel.app/api/v1/users/${id}`);
+        const response = await axios.get(`https://leader-board-back-end.vercel.app/api/v1/users/${id}`);
         setUser(response.data.user);
       }catch(error){
         console.log(error);
@@ -28,7 +28,7 @@ function User() {
     eve.preventDefault();
     const value = Math.floor(Math.random() * 10) + 1
     try{
-      const response = await axios.patch(`https://leader-board-back-j11gfrkfa-sidhu-narisettys-projects.vercel.app/api/v1/users/${id}`,{
+      const response = await axios.patch(`https://leader-board-back-end.vercel.app/api/v1/users/${id}`,{
         value
       });
       alert(`Score of ${value} is awarded to the user ${user.name}`);
