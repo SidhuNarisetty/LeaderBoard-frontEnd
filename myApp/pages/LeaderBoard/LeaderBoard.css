@@ -1,0 +1,66 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Table styling */
+  table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  thead {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Rank column styling */
+  td:first-child {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    table {
+      width: 100%;
+      font-size: 14px;
+    }
+    
+    th, td {
+      padding: 8px 10px;
+    }
+  }
+  
